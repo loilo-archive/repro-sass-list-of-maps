@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "sass:list";
+
+$list-of-maps: (
+  (
+    "key": "value"
+  )
+);
+
+$list-item: list.nth($list-of-maps, 1);
+$value: map.get($list-item, "key");
